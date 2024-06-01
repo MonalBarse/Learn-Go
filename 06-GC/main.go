@@ -1,3 +1,4 @@
+// Here is my Blog on GC: http://link.medium.com/W85XK1OU2Jb
 package main
 
 import (
