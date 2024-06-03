@@ -2,12 +2,22 @@ package main
 
 import "fmt"
 
+/*
 type Employee struct {
 	firstName string
 	lastName  string
 	age       int
 	salary    int
-}
+}  // These fields are not exported outside the package since they start with small letter
+
+*/
+
+type Employee struct {
+	FirstName string
+	LastName  string
+	Age       int
+	Salary    int
+} // These fields are exported outside the package since they start with capital letter
 
 func main() {
 
@@ -19,12 +29,14 @@ func main() {
 	// There is no inheritance in Golang, but we can achieve composition by embedding one struct into another struct
 	// No super or parent keyword in Golang
 	// Creating a struct
+
 	emp1 := Employee{
-		firstName: "Sam",
-		lastName:  "Anderson",
-		age:       55,
-		salary:    600000,
+		FirstName: "Sam",
+		LastName:  "Anderson",
+		Age:       55,
+		Salary:    600000,
 	} // or emp1 := Employee{"Sam", "Anderson", 55, 6000} since we know the order of the fields
+
 	emp2 := Employee{"Monal", "Barse", 29, 998000}
 
 	fmt.Println("Employee 1", emp1)
