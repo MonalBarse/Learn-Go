@@ -47,6 +47,8 @@ func main() {
 // %v : default format         : eg:- "%v" for 5 will give 5
 // %x : hexadecimal values     : eg:- "%x" for 324324 will give 4f9f4
 
+// %+v : print the value in a default format with field names : eg in a struct say {name: "John", age: 25} for %+v will give {name: John, age: 25}
+
 // capital letter placeholder (also in alphabetical order)
 
 // %E : scientific notation

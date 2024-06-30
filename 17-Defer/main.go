@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	fmt.Println("Defer")
+	fmt.Println("----------- Defer in Golang -----------")
 	// Defer is used to delay the execution of a statement until the end of the function
 	// It's used to ensure that a function call is performed later in a program's execution
 
@@ -15,20 +15,8 @@ func main() {
 	first()
 	second()
 	myDefer()
-
 	/*
 	   Output:
-	   Defer
-	   First function
-	   Second function
-	   Second function part 1
-	   Second function part 2
-	   3
-	   2
-	   1
-	   0
-	   Last second function
-	   Last function
 	*/
 }
 
@@ -47,9 +35,7 @@ func second() {
 // --------------------------------------------------- //
 
 func myDefer() {
-
-	for i := 0; i < 4; i++ {
+	for i := 1; i <= 5; i++ {
 		defer fmt.Println(i)
-	} // output : 3 2 1 0
-
+	}
 }

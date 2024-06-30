@@ -25,6 +25,19 @@ func (u Employee) SalaryIncrement() {
 	fmt.Println("New salary of the employee is: ", newSalary)
 }
 
+func reverse(i ...int64) []int64 {
+	// Example: myDefer(1, 2, 3, 4) => [4, 3, 2, 1]
+
+	// first we create a slice to store the reversed integers
+	reversed := make([]int64, 0)
+	// iterate
+	for _, v := range i {
+		// prepend the integer to the slice
+		reversed = append([]int64{v}, reversed...)
+	}
+	return reversed
+}
+
 func main() {
 
 	fmt.Println("Menhods in Golang")

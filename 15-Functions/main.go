@@ -35,6 +35,18 @@ func superAdd(val ...float64) float64 {
 
 	return result
 }
+func reverse(i ...int64) []int64 {
+	// Example: myDefer(1, 2, 3, 4) => [4, 3, 2, 1]
+
+	// first we create a slice to store the reversed integers
+	reversed := make([]int64, 0)
+	// iterate
+	for _, v := range i {
+		// prepend the integer to the slice
+		reversed = append([]int64{v}, reversed...)
+	}
+	return reversed
+}
 
 // ---------There's more about functions which we will see in future modules-------- //
 func main() { // We don't need to call the main function. It's called automatically when we run the program
@@ -55,6 +67,10 @@ func main() { // We don't need to call the main function. It's called automatica
 	fmt.Println("----------------------------")
 	result3 := superAdd(10.01, 20.05, 30.3, 40.3, 50.5)
 	fmt.Printf("Result of superAdd is %v and the type is %T\n", result3, result3)
+
+	fmt.Println("----------------------------")
+	result4 := reverse(99, 88, 77, 66, 55)
+	fmt.Printf("Result of reverse is %v and the type is %T\n", result4, result4)
 }
 
 // --------------------------------------------------- //
