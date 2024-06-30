@@ -2,23 +2,6 @@ package main
 
 import "fmt"
 
-func main() { // Main function is the entry point of the program
-	// We don't need to call the main function. It's called automatically when we run the program
-	fmt.Println("Functions in Go")
-	greetings()
-
-	result1 := add(10, 20)
-	fmt.Printf("Result of addition is %v and the type is %T\n", result1, result1)
-
-	result2 := divide(10, 3)
-	fmt.Printf("Result of division is %v and the type is %T\n", result2, result2)
-
-	result3 := superAdd(10.01, 20.05, 30.3, 40.3, 50.5)
-	fmt.Printf("Result of superAdd is %v and the type is %T\n", result3, result3)
-}
-
-// --------------------------------------------------- //
-
 func greetings() {
 	fmt.Println("Hello from greetings function")
 }
@@ -54,3 +37,24 @@ func superAdd(val ...float64) float64 {
 }
 
 // ---------There's more about functions which we will see in future modules-------- //
+func main() { // We don't need to call the main function. It's called automatically when we run the program
+	fmt.Println("Functions in Go")
+	fmt.Println("Main function is the entry point of the program")
+
+	fmt.Println("----------------------------")
+	greetings()
+
+	fmt.Println("----------------------------")
+	result1 := add(10, 20)
+	fmt.Printf("Result of addition is %v and the type is %T\n", result1, result1)
+
+	fmt.Println("----------------------------")
+	result2 := divide(10, 3)
+	fmt.Printf("Result of division is %v and the type is %T\n", result2, result2)
+
+	fmt.Println("----------------------------")
+	result3 := superAdd(10.01, 20.05, 30.3, 40.3, 50.5)
+	fmt.Printf("Result of superAdd is %v and the type is %T\n", result3, result3)
+}
+
+// --------------------------------------------------- //

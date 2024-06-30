@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("Switch Statements in Golang")
 
 	// Switch statement with a single case
-	fmt.Println("Writing logic for dice of Ludo")
+	fmt.Println("-------Ludo Game-------")
 	r := rand.New(rand.NewSource(time.Now().UnixNano())) // This line is used to create a source of randomness
 	// here we use time.Now().UnixNano() as a seed which means the seed is the current time in nanoseconds
 	// i.e the seed is always changing and hence the random number generated is always different.
@@ -24,12 +24,12 @@ func main() {
 	// For a given seed, the generator will produce the same sequence of numbers each time.
 	// The seed value is used to initialize the generator's state.
 
-	dice := r.Intn(6) + 1 // Generate a random number between 1 and 6
+	dice := r.Intn(6) + 1 // Intn (given by math/rand) returns a non-negative pseudo-random number in [0,n)
+	fmt.Printf("The random number generated is of Type: %T\n\n", dice)
 	fmt.Println("Dice rolled to:", dice)
 
 	switch dice {
 	case 1:
-
 		fmt.Println("You got 1, You can start the game or move 1 step")
 	case 2:
 		fmt.Println("You rolled 2, You should move 2 steps")
@@ -42,7 +42,7 @@ func main() {
 	case 6:
 		fmt.Println("You rolled 6, You should move 6 steps and get another chance to roll the dice")
 	default:
-		fmt.Println("Invalid dice roll")
+		fmt.Println("Invalid dice roll") // Default case is a case that runs if none of the cases match
 	}
 
 }

@@ -26,5 +26,5 @@ func main() {
 		fmt.Println("An error occurred while reading the input string.")
 		return
 	}
-	fmt.Printf("The number you entered is %s, it is of type %T\n", input, input)
+	fmt.Printf("The number you entered %s is of type %T\n", input, input)
 }

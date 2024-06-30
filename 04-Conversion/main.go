@@ -1,11 +1,11 @@
 package main
 
 import (
-	"bufio"
-	"fmt"
-	"os"
-	"strconv"
-	"strings"
+	"bufio"   // for reading input specifically from the console
+	"fmt"     // for printing the output to the console
+	"os"      // the bufio package uses the os package to read the input from the console bufio for file i/o is bufio.NewReader(file)
+	"strconv" // for converting the string to a float64
+	"strings" // strings package for manipulating strings like trimming the white spaces from the input text
 )
 
 func main() {

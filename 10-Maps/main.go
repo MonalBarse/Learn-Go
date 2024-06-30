@@ -48,7 +48,8 @@ func main() {
 	// Checking if a key exists in the map
 	_, exists := languages["ko"]
 	fmt.Println("Does the key 'ko' exists in the languages map: ", exists) // false
-
+	_, exists = languages["en"]
+	fmt.Println("Does the key 'en' exists in the languages map: ", exists) // true
 	value, exists := languages["en"]
 	fmt.Printf("Key: %v, Value: %v, Exists: %v\n", "en", value, exists) // Key: en, Value: English, Exists: true
 	fmt.Println("----------------------------")
