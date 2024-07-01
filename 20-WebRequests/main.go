@@ -13,7 +13,8 @@ func main() {
 	fmt.Println("URL: ", URL)
 
 	// URL Parsing
-	// The URL package provides a URL type that represents a URL. The URL type has methods to parse a URL string, construct a URL string, and query the URL. The URL type is used to represent a URL and provides methods to parse a URL string, construct a URL string, and query the URL.
+	// The URL package provides a URL type that represents a URL. The URL type has methods to parse a URL string, construct a URL string, and query the URL.
+	// The URL type is used to represent a URL and provides methods to parse a URL string, construct a URL string, and query the URL.
 
 	// The URL type has the following fields:
 	// Scheme: The URL scheme, such as http, https, ftp, etc.
