@@ -20,6 +20,8 @@ node_modules/
 /tmp
 /log
 
+# env files
+.env
 # Go IDE-specific files
 .idea/
 .vscode/
