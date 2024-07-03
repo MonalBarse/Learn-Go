@@ -67,7 +67,7 @@ Feel free to explore the different sections, contribute, or use this repository 
 - [x] Wait Groups
 - [x] Mutex
 - [x] Race Condition
-- [x] Channels & Deadlock
+- [x] Channels
 
 ## Advanced Topics to Cover
 
