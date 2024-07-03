@@ -1,5 +1,5 @@
 // parallelism.go
-package main
+package parallelism
 
 import (
 	"fmt"

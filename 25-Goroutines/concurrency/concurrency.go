@@ -1,5 +1,5 @@
 // concurrency.go
-package main
+package concurrency
 
 import (
 	"fmt"

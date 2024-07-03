@@ -1,37 +1,36 @@
 // main.go
+
 package main
 
 import (
 	"fmt"
 	"time"
+
+	"github.com/MonalBarse/Learn-Go/tree/main/25-Goroutines/concurrency"
+	"github.com/MonalBarse/Learn-Go/tree/main/25-Goroutines/mutex"
+	"github.com/MonalBarse/Learn-Go/tree/main/25-Goroutines/parallelism"
 )
 
-// A function that simulates some work by sleeping for a second
-func sequentialWork(id int) {
-	time.Sleep(1 * time.Second)
-	fmt.Printf("Worker %d completed\n", id)
-}
-
-// SequentialExample demonstrates the same task without parallelism or concurrency
-func SequentialExample() {
-	start := time.Now()
-
-	// Performing work sequentially
-	for i := 1; i <= 5; i++ {
-		sequentialWork(i)
-	}
-
-	duration := time.Since(start)
-	fmt.Printf("All workers completed sequentially in %v\n", duration)
-}
-
 func main() {
-	fmt.Println("Starting Sequential Example")
-	SequentialExample()
+	fmt.Println("Learning about Goroutines, Parallelism, Concurrency, and Mutex in Go")
 
-	fmt.Println("\nStarting Parallelism Example")
-	ParallelismExample()
+	fmt.Println("\n--- Parallelism Example ---")
+	parallelism.ParallelismExample()
 
-	fmt.Println("\nStarting Concurrency Example")
-	ConcurrencyExample()
+	time.Sleep(500 * time.Millisecond) // Add delay between examples
+
+	fmt.Println("\n--- Concurrency Example ---")
+	concurrency.ConcurrencyExample()
+
+	time.Sleep(500 * time.Millisecond) // Add delay between examples
+
+	fmt.Println("\n--- Mutex Example ---")
+	mutex.MutexExample() // Use MutexExample from the mutex package
+
+	time.Sleep(500 * time.Millisecond) // Add delay between examples
+
+	fmt.Println("\n--- No Mutex Example (Race Condition) ---")
+	mutex.NoMutexExample() // Use NoMutexExample from the mutex package
+
+	fmt.Println("\nCompleted learning examples")
 }
