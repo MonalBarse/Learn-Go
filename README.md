@@ -60,7 +60,7 @@ Feel free to explore the different sections, contribute, or use this repository 
 - [x] Querying MongoDB
 - [x] Handling collections
 
-### **Concurrency and Goroutines in Golang:**
+### **Concurrency and Goroutines in Golang:** [Link](https://youtu.be/qyM8Pi1KiiM?si=XFjd6lcIcmh_5NUP)
 
 - [ ] Concurrency
 - [ ] Goroutines
