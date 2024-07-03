@@ -65,10 +65,9 @@ Feel free to explore the different sections, contribute, or use this repository 
 - [x] Concurrency & Parallelism
 - [x] Goroutines
 - [x] Wait Groups
-- [ ] Mutex
-- [ ] Race Condition
-- [ ] Channels
-- [ ] Deadlock
+- [x] Mutex
+- [x] Race Condition
+- [x] Channels & Deadlock
 
 ## Advanced Topics to Cover
 
