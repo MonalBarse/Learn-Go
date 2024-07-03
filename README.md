@@ -47,6 +47,8 @@ Feel free to explore the different sections, contribute, or use this repository 
 
 ## Misc Topics
 
+### Makefiles - [Resource](https://www.youtube.com/watch?v=QPfNopc6B_g&list=PLtimIuw_6KzXti4B_Y6xIEj88YlstpCnk)
+
 ### Building API in Golang
 
 - [x] Models
@@ -60,7 +62,7 @@ Feel free to explore the different sections, contribute, or use this repository 
 - [x] Querying MongoDB
 - [x] Handling collections
 
-### **Goroutines in Golang:** [Link](https://youtu.be/qyM8Pi1KiiM?si=XFjd6lcIcmh_5NUP)
+### **Goroutines in Golang:** [Resource](https://youtu.be/qyM8Pi1KiiM?si=XFjd6lcIcmh_5NUP)
 
 - [x] Concurrency & Parallelism
 - [x] Goroutines
@@ -93,10 +95,10 @@ Feel free to explore the different sections, contribute, or use this repository 
 - [ ] Identifying and optimizing performance bottlenecks.
 - [ ] Techniques for reducing memory allocations and CPU usage.
 
-### Package Management
+### Package Management -- [Resource1](https://youtu.be/O8uUGEobo-Q?si=iV6z0znekAsz3-Xm) [Resource2](https://youtu.be/20sLKEpHvvk?si=jt9iTO4eoD4EZRbd)
 
-- [ ] Understanding the role of `go.mod` files in Go modules.
-- [ ] Managing dependencies and versioning in Go.
+- [x] Understanding the role of `go.mod` files in Go modules.
+- [x] Managing dependencies and versioning in Go.
 - [ ] Working with private repositories and proxy servers.
 - [ ] Resolving dependency conflicts and ensuring reproducibility.
 
@@ -104,7 +106,7 @@ Feel free to explore the different sections, contribute, or use this repository 
 
 - [ ] Applying clean coding practices in Go.
 - [ ] Implementing design patterns like Singleton, Factory, and Observer in Go.
-- [ ] Structuring Go projects for maintainability and scalability.
+- [ ] Structuring Go projects for maintainability and scalability.  [Resource1](https://youtu.be/dJIUxvfSg6A?si=QjV_dY6jKd3CFewp) [Resource2](https://youtu.be/OVwUldzmVOg?si=KA37L0CjM-JZk8Wg)
 - [ ] Writing idiomatic Go code and adhering to Go's community style guide.
 
 ### Advanced Concurrency
