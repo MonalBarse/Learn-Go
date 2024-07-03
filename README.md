@@ -60,14 +60,11 @@ Feel free to explore the different sections, contribute, or use this repository 
 - [x] Querying MongoDB
 - [x] Handling collections
 
-### **Concurrency and Goroutines in Golang:** [Link](https://youtu.be/qyM8Pi1KiiM?si=XFjd6lcIcmh_5NUP)
+### **Goroutines in Golang:** [Link](https://youtu.be/qyM8Pi1KiiM?si=XFjd6lcIcmh_5NUP)
 
-- [ ] Concurrency
-- [ ] Goroutines
-
-### **Other Topics:**
-
-- [ ] Wait Groups
+- [x] Concurrency & Parallelism
+- [x] Goroutines
+- [x] Wait Groups
 - [ ] Mutex
 - [ ] Race Condition
 - [ ] Channels
