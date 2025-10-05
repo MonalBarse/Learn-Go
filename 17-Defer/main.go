@@ -39,3 +39,16 @@ func myDefer() {
 		defer fmt.Println(i)
 	}
 }
+
+// ----------- Defer in Golang -----------
+// First function
+// Second function
+// Second function part 1
+// Second function part 2
+// 5
+// 4
+// 3
+// 2
+// 1
+// Last second function
+// Last function
